@@ -1,0 +1,52 @@
+@import "libs"
+@import "vars"
+@import "fonts"
+
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+  font-family: $default-font
+  transition: all 0.3s ease
+
+  &:before, &:after
+    box-sizing: border-box
+  &:focus
+    outline: none
+
+::selection
+  background: #4252ff
+  color: white
+
+.no-select
+  user-select: none
+
+.main
+  margin: 50px auto
+  position: relative
+  overflow: hidden 
+  width: 500px
+  height: 700px
+  border: 1px solid black
+  .tetris
+    width: 500px
+    height: 900px
+    display: flex
+    overflow: hidden
+    flex-wrap: wrap
+    position: absolute
+    bottom: 0
+    background-color: #fff
+    .excel
+      width: 50px
+      height: 50px
+      border: 1px solid #ccc
+.figure
+  background-color: blue
+
+
+
+
+
+
+@import "media"
